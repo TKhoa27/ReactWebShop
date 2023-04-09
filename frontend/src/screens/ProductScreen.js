@@ -1,15 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useParams, useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
-import {
-  Col,
-  Row,
-  Image,
-  ListGroup,
-  Card,
-  Button,
-  FormControl,
-} from 'react-bootstrap'
+import { Col, Row, Image, ListGroup, Card, Button, Form } from 'react-bootstrap'
 import Rating from '../components/Rating'
 import { listProductDetails } from '../actions/productActions'
 import Message from '../components/Message'
@@ -92,7 +84,7 @@ const ProductScreen = ({ history, match }) => {
                     <Row>
                       <Col>Qty</Col>
                       <Col>
-                        <FormControl
+                        <Form.Control
                           as='select'
                           value={qty}
                           onChange={(e) => setQty(e.target.value)}
@@ -102,7 +94,7 @@ const ProductScreen = ({ history, match }) => {
                               {x + 1}
                             </option>
                           ))}
-                        </FormControl>
+                        </Form.Control>
                       </Col>
                     </Row>
                   </ListGroup.Item>
