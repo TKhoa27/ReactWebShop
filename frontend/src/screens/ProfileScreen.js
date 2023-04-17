@@ -98,7 +98,11 @@ const ProfileScreen = ({ history }) => {
             ></Form.Control>
           </Form.Group>
 
-          <Button type='submit' variant='primary' className='mt-3'>
+          <Button
+            type='submit'
+            variant='primary'
+            className='mt-3 btn-shadow0-blur'
+          >
             Update
           </Button>
         </Form>
